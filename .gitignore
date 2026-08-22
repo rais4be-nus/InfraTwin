@@ -1,0 +1,13 @@
+# Raw, unpublished source material — decks, notes, video.
+# The published page only ever uses processed copies placed directly
+# in assets/. See private-inputs/README.md.
+private-inputs/
+
+# Raw images extracted from the decks/docx, not yet curated for the
+# public page. Pick, rename, and process the ones you want into
+# assets/ directly — this staging folder itself never gets committed.
+assets/extracted/
+
+# Common local files
+.DS_Store
+Thumbs.db
