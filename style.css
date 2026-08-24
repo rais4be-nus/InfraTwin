@@ -652,6 +652,20 @@ section[id] {
   border: 1px solid var(--border);
 }
 
+.video-frame-inline video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: #000;
+}
+
+.watermark-top {
+  bottom: auto;
+  top: 10px;
+}
+
 .innovation-media figcaption {
   margin-top: 10px;
   font-size: 0.8125rem;
