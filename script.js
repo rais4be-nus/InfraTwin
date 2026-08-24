@@ -47,6 +47,13 @@
     });
   }
 
+  /* Basic deterrent against right-click "Save Image As" — not foolproof, just friction */
+  document.addEventListener("contextmenu", function (e) {
+    if (e.target && e.target.tagName === "IMG") {
+      e.preventDefault();
+    }
+  });
+
   /* Scroll reveal — simple fade/translate, respects prefers-reduced-motion */
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     var io = new IntersectionObserver(
