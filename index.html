@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InfraTwin — Robotics and AI for Automated Digital Twinning of Buildings and Infrastructure</title>
+<meta name="description" content="InfraTwin: a connected workflow from robotic reality capture to AI-assisted digital twins, from RAIS4BE Lab, National University of Singapore.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.replace("no-js", "js");</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">Infra<span class="brand-dot">Twin</span></a>
+    <div class="nav-right">
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#video">Video</a>
+        <a href="#team">Team</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="reveal">
+        <h1 class="hero-title">Infra<span class="brand-dot">Twin</span><br>Robotics and AI for Automated Digital Twinning of Buildings and Infrastructure</h1>
+        <p class="hero-tagline">From physical infrastructure to engineering intelligence.</p>
+        <div class="hero-ctas">
+          <a href="#video" class="btn btn-primary">Watch the video</a>
+          <a href="#solution" class="btn btn-secondary">See how it works</a>
+        </div>
+        <p class="hero-note">A connected workflow from robotic reality capture to AI-assisted digital twins — developed within RAIS4BE Lab, Department of the Built Environment, NUS College of Design and Engineering.</p>
+      </div>
+      <div class="hero-visual reveal">
+        <img src="assets/hero-solution-overview.jpg" alt="InfraTwin overview: autonomous robots and sensors capturing infrastructure as physical hardware, layered into a cognitive digital twin with geometry, semantic and condition layers">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PROBLEM ============================== -->
+  <section id="problem" class="bg-subtle">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Problem</span>
+        <h2 class="section-title">Where and how time and money are lost</h2>
+        <p class="section-lede">Ageing infrastructure assets, climate hazards and limited AEC industry capacity are converging into one problem for smart cities. Building and infrastructure owners need to survey the site, capture complete and up-to-date as-built conditions, and convert the captured data into usable digital records. This process faces two key bottlenecks.</p>
+      </div>
+
+      <div class="bottleneck-flow reveal">
+        <div class="bottleneck-step">
+          <div class="step-media">
+            <img src="assets/capture-site-coastal.jpg" alt="Annotated capture site map showing beach, seawall and revetment sections of coastal infrastructure">
+          </div>
+          <span class="step-index">1.1</span>
+          <h3>Reality Capture</h3>
+          <p>Capture 3D geometric data (such as point clouds) and updated as-built conditions (RGB / thermal imagery) for infrastructure.</p>
+        </div>
+        <div class="bottleneck-arrow" aria-hidden="true">→</div>
+        <div class="bottleneck-step">
+          <div class="step-media img-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>
+            <p><strong>Proposed image:</strong> a point cloud or coverage map with visible gaps/missing regions highlighted, illustrating incomplete scan coverage</p>
+          </div>
+          <span class="step-index">1.2</span>
+          <h3>Incomplete Coverage</h3>
+          <p>Achieving complete, reliable scan coverage across complex infrastructure is highly time-demanding. Incomplete coverage means missing regions, unreliable records, and repeated site visits.</p>
+        </div>
+      </div>
+      <div class="bottleneck-flow reveal" style="margin-top:16px;">
+        <div class="bottleneck-step">
+          <div class="step-media">
+            <img src="assets/capture-pointcloud-coastal.jpg" alt="Raw captured point cloud of coastal infrastructure, labelled seawall and revetment, awaiting conversion into a digital record">
+          </div>
+          <span class="step-index">2.1</span>
+          <h3>Digital Twinning</h3>
+          <p>Captured data (e.g. point clouds) is processed manually by specialised experts to convert it into usable digital records and engineering 3D models for maintenance planning.</p>
+        </div>
+        <div class="bottleneck-arrow" aria-hidden="true">→</div>
+        <div class="bottleneck-step">
+          <div class="step-media img-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M8 16h5M8 8h3"/></svg>
+            <p><strong>Proposed image:</strong> a specialist manually cleaning/annotating point cloud data at a workstation, conveying the labour-intensive current process</p>
+          </div>
+          <span class="step-index">2.2</span>
+          <h3>Manual Intervention</h3>
+          <p>Cleaning, annotating and converting survey data into usable digital records still requires substantial specialist effort — accuracy and processing efficiency of existing semi-automated tools remain limited.</p>
+        </div>
+      </div>
+
+      <p class="problem-closing reveal">Incomplete scans <span>→</span> manual processing <span>→</span> late engineering outputs.</p>
+    </div>
+  </section>
+
+  <!-- ============================== SOLUTION ============================== -->
+  <section id="solution">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our Solution &amp; Innovation</span>
+        <h2 class="section-title">InfraTwin closes the loop</h2>
+        <p class="section-lede">A connected workflow from robotic capture to AI-assisted digital twins.</p>
+      </div>
+
+      <div class="solution-flow reveal">
+        <span class="solution-flow-word is-accent">Perceive</span>
+        <span class="solution-flow-word is-accent">Understand</span>
+        <span class="solution-flow-word is-accent">Deliver</span>
+      </div>
+
+      <div class="solution-grid reveal">
+        <div class="solution-card">
+          <div class="card-media">
+            <img src="assets/robot-platform-01.png" alt="InfraTwin's autonomous scanning robot">
+          </div>
+          <span class="card-index">01</span>
+          <h3>Infra.SENSE</h3>
+          <p>Identifies insufficiently scanned regions early and guides specialists/robots to capture more complete infrastructure data.</p>
+        </div>
+        <div class="solution-card">
+          <div class="card-media">
+            <img src="assets/segmentation-connection-lecture-hall.png" alt="Point cloud segmented into structural, M&amp;E and infrastructure components">
+          </div>
+          <span class="card-index">02</span>
+          <h3>Infra.SEG</h3>
+          <p>Automatically segments point clouds into structural, M&amp;E and infrastructure components.</p>
+        </div>
+        <div class="solution-card">
+          <div class="card-media">
+            <img src="assets/pipeline-input-process-output.png" alt="Pipeline from raw point cloud input, through AI processing, to reconstructed BIM output">
+          </div>
+          <span class="card-index">03</span>
+          <h3>Infra.DT</h3>
+          <p>Reconstructs IFC-compatible engineering digital twins for asset management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== INNOVATION 1: SENSE ============================== -->
+  <section class="bg-subtle">
+    <div class="container">
+      <div class="innovation reveal">
+        <div class="innovation-media">
+          <img src="assets/diagram-robot-platform.png" alt="InfraTwin's wheel-leg robot scanning platform, on-board computer, and multi-sensor data acquisition system, with real hardware photos">
+          <figcaption>InfraTwin's wheel-leg scanning platform — real hardware, not a render.</figcaption>
+        </div>
+        <div>
+          <span class="innovation-tag">Innovation 1</span>
+          <h3>Infra.SENSE: Robots that know where to scan</h3>
+          <p class="innovation-lede">The robot is not only a mobile scanner; it reasons about visibility, occlusion and scan coverage.</p>
+          <p class="innovation-body">In complex infrastructure, surfaces are occluded, corridors are narrow, and the best viewpoint isn't always obvious. InfraTwin's sensor perception model predicts visibility and scan coverage before the robot moves, then selects viewpoints and trajectories that improve the final point cloud.</p>
+
+          <div class="stat-row">
+            <div class="stat">
+              <div class="stat-value">40–50%</div>
+              <div class="stat-label">reduction in scanning time</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">10–20%</div>
+              <div class="stat-label">improvement in scan coverage</div>
+            </div>
+          </div>
+
+          <p class="commercial-note"><strong>Commercial meaning:</strong> fewer return visits, fewer missing areas, and more complete infrastructure records.</p>
+        </div>
+      </div>
+
+      <div class="platform-gallery reveal">
+        <figure class="platform-card">
+          <div class="platform-card-media">
+            <img src="assets/platform-robot-dog.jpg" alt="InfraTwin's wheel-leg scanning robot, real hardware with LiDAR, camera and on-board computer">
+          </div>
+          <figcaption>Wheel-leg scanning robot — InfraTwin's own hardware</figcaption>
+        </figure>
+        <figure class="platform-card">
+          <div class="platform-card-media">
+            <img src="assets/platform-robot-vehicle.png" alt="Wheeled ground robot vehicle platform">
+          </div>
+          <figcaption>Wheeled ground vehicle platform</figcaption>
+        </figure>
+        <figure class="platform-card">
+          <div class="platform-card-media">
+            <img src="assets/platform-uav.png" alt="UAV / aerial drone capture platform">
+          </div>
+          <figcaption>Aerial (UAV) capture platform</figcaption>
+        </figure>
+        <figure class="platform-card">
+          <div class="platform-card-media">
+            <img src="assets/platform-underwater-robot.png" alt="Underwater ROV capture platform">
+          </div>
+          <figcaption>Underwater (ROV) capture platform</figcaption>
+        </figure>
+        <figure class="platform-card">
+          <div class="platform-card-media">
+            <img src="assets/platform-tls-scanner.png" alt="Tripod-mounted terrestrial laser scanner">
+          </div>
+          <figcaption>Terrestrial laser scanner (TLS)</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== INNOVATION 2: SEG ============================== -->
+  <section>
+    <div class="container">
+      <div class="innovation is-reversed reveal">
+        <div class="innovation-media">
+          <img src="assets/segmentation-connection-lecture-hall.png" alt="Real segmentation results comparing ground truth and predicted point cloud classification, Connection Hall and Lecture Hall">
+          <figcaption>Real segmentation output — ground truth vs. predicted, across two building interiors.</figcaption>
+        </div>
+        <div>
+          <span class="innovation-tag">Innovation 2</span>
+          <h3>Infra.SEG: Raw scans become engineering digital twins</h3>
+          <p class="innovation-lede">The platform turns point clouds into segmented components and reconstructed BIM objects.</p>
+          <p class="innovation-body"><strong>Infra.SEG</strong> uses BIM-generated synthetic point clouds, weak supervision and vision foundation models to reduce annotation effort — adapting segmentation across industrial facilities, bridges, transport assets and complex M&amp;E systems, without depending on manually labelling every new site from scratch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== INNOVATION 3: DT ============================== -->
+  <section class="bg-subtle">
+    <div class="container">
+      <div class="innovation reveal">
+        <div class="innovation-media">
+          <img src="assets/heritage-defect-detection.png" alt="Isometric building reconstructions with numbered defect and crack-detection callouts, derived from segmented point clouds">
+          <figcaption>Segmented components carried through to condition/defect detection on a real heritage building survey.</figcaption>
+        </div>
+        <div>
+          <span class="innovation-tag">Innovation 3</span>
+          <h3>Infra.DT: Segmented components become IFC-compatible digital twins</h3>
+          <p class="innovation-lede">Infra.DT moves from raw scan data to object-level information, ready for engineering and asset-management workflows.</p>
+          <p class="innovation-body">For transport infrastructure, the system identifies structural and M&amp;E components — beams, columns, ducts, pipes, equipment — from LiDAR point clouds and reconstructs them into IFC-compatible BIM. The same underlying segmentation-to-reconstruction pipeline extends to condition and defect assessment, shown here on a real heritage building survey — carrying labelled components through to fine-grained surface and structural condition detection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== VIDEO ============================== -->
+  <section id="video" class="bg-subtle">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Watch</span>
+        <h2 class="section-title">See InfraTwin in action</h2>
+      </div>
+      <div class="video-frame reveal">
+        <iframe src="https://www.youtube.com/embed/-iOz_pBza9o" title="InfraTwin promotional video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TEAM ============================== -->
+  <section id="team">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Backed by Research</span>
+        <h2 class="section-title">RAIS4BE Lab, National University of Singapore</h2>
+        <p class="section-lede">InfraTwin is developed within RAIS4BE Lab, Department of the Built Environment, NUS College of Design and Engineering — a multidisciplinary team spanning civil, mechanical, geodesy and computer engineering.</p>
+      </div>
+
+      <div class="team-grid reveal">
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="assets/team-vincent-gan-isarc.jpg" alt="Dr Vincent Gan presenting at 43rd ISARC / 34th IGLC">
+          </div>
+          <div>
+            <div class="team-name">Vincent Gan, PhD</div>
+            <div class="team-role">Principal Investigator · Assistant Professor, NUS</div>
+            <p class="team-bio">PhD in Civil Engineering, Hong Kong University of Science and Technology (2016). Assistant Professor, Department of the Built Environment, NUS.</p>
+            <p class="team-credentials">
+              Principal Investigator — AI-assisted scan-to-BIM technology for 3D reconstruction of infrastructure information models (National Research Foundation, AI Singapore Programme, and Land Transport Authority through the Land Transport Innovation Fund, 2023–2025).<br><br>
+              Co-chair, Local Organising Committee, 43rd ISARC / 34th IGLC, Singapore 2026.<br><br>
+              Second Runner-Up, NUS CDE Impact Accelerator Challenge (2024) — Scan2BIM: robotic scanning for automated 3D digital reconstruction.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="assets/team-jingxuan-li.jpg" alt="Li Jingxuan (Joshua)">
+          </div>
+          <div>
+            <div class="team-name">Li Jingxuan (Joshua)</div>
+            <div class="team-role">PhD Student, Dept. of the Built Environment, NUS</div>
+            <p class="team-bio">Researches heritage-building digitisation, 3D scene understanding and robotics for the built environment — including structural defect detection in Singapore's conserved heritage shophouses, the NUS3D point-cloud dataset, and the InfraTwin capture-to-digital-twin pipeline.</p>
+            <p class="team-credentials">
+              <strong>Master's research:</strong> Research Assistant, Solar Energy Research Institute of Singapore (SERIS), Mar 2024–Jan 2025 — BIPV integration onto heritage buildings, with NHB &amp; NUS Baba House Museum.<br><br>
+              <strong>Design training:</strong> MArch, National University of Singapore (2023–2025). BArch, Chongqing University (2020–2023).<br><br>
+              Speaker, EEHB 2024 (5th International Conference on Energy Efficiency in Historic Buildings, ICOMOS Singapore). Presenter, 43rd ISARC / 34th IGLC, Singapore 2026.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="conference-strip reveal">
+        <figure>
+          <img src="assets/event-isarc-2026.jpg" alt="Jingxuan Li presenting at 43rd ISARC / 34th IGLC, NUS College of Design and Engineering">
+          <figcaption>Presenting at 43rd ISARC / 34th IGLC — Singapore, 21–26 June 2026.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/event-isarc-audience.jpg" alt="Dr Vincent Gan at 43rd ISARC / 34th IGLC">
+          <figcaption>Dr Vincent Gan at 43rd ISARC / 34th IGLC, NUS College of Design and Engineering.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-lede">RAIS4BE Lab, Department of the Built Environment, NUS College of Design and Engineering.</p>
+    <div class="footer-links">
+      <a href="https://www.rais4be.com/" target="_blank" rel="noopener noreferrer">rais4be.com</a>
+      <a href="mailto:vincent.gan@nus.edu.sg">vincent.gan@nus.edu.sg</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

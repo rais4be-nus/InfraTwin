@@ -7,6 +7,7 @@ private-inputs/
 # public page. Pick, rename, and process the ones you want into
 # assets/ directly — this staging folder itself never gets committed.
 assets/extracted/
+assets/proposed core asset/
 
 # Common local files
 .DS_Store
